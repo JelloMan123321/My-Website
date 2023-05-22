@@ -31,7 +31,20 @@ if (location.protocol !== 'https:') {
                     <div class="hero-split">
                         <h1>The LifeSteal SMP</h1>
                         <p class="margin-bottom-24px">The LifeSteal SMP is a shitty Minecraft server, but when you kill someone, you steal one of their permanent hearts.</p>
-                        <a href="https://oil-sky-emu.glitch.me/" data-w-id="1ad059b5-2aaa-9d14-ebb9-f56bd4526dd3" target="_blank" class="button-primary w-button">Copy Join Link</a>
+                        <a href="https://oil-sky-emu.glitch.me/" data-w-id="1ad059b5-2aaa-9d14-ebb9-f56bd4526dd3" target="_blank" class="button-primary w-button" onclick="copyToClipboard('https://oil-sky-emu.glitch.me/'); return false;">Copy Join Link</a>
+
+<script>
+  function copyToClipboard(text) {
+    const tempInput = document.createElement('textarea');
+    tempInput.value = text;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand('copy');
+    document.body.removeChild(tempInput);
+    alert('Successfully Copied Join Link');
+  }
+</script>
+
                     </div>
                     <div class="hero-split">
                         <img src="https://uploads-ssl.webflow.com/646a7bd40500c46bb86985d3/646a80e74a49e84e5f97f047_maxresdefault.jpg" loading="lazy" sizes="(max-width: 479px) 94vw, (max-width: 767px) 95vw, (max-width: 991px) 92vw, 43vw" srcset="https://uploads-ssl.webflow.com/646a7bd40500c46bb86985d3/646a80e74a49e84e5f97f047_maxresdefault-p-500.jpg 500w, https://uploads-ssl.webflow.com/646a7bd40500c46bb86985d3/646a80e74a49e84e5f97f047_maxresdefault-p-800.jpg 800w, https://uploads-ssl.webflow.com/646a7bd40500c46bb86985d3/646a80e74a49e84e5f97f047_maxresdefault-p-1080.jpg 1080w, https://uploads-ssl.webflow.com/646a7bd40500c46bb86985d3/646a80e74a49e84e5f97f047_maxresdefault.jpg 1280w" alt="" class="shadow-two"/>
